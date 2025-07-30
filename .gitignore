@@ -1,0 +1,67 @@
+# Ignore Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Ignore environment variables and secrets
+.env
+.env.*
+
+# Ignore package distribution files
+dist/
+build/
+*.egg-info/
+
+# Ignore test output and coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+.pytest_cache/
+.cache/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore IDE/editor configs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore logs
+*.log
+
+# Ignore mypy and other tool artifacts
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# Ignore pipenv and poetry files
+Pipfile.lock
+poetry.lock
+
+# Optional: Ignore compiled C extensions
+*.so
+
+# Optional: ignore SQLite database files
+*.sqlite3
+*.db
+
+# Optional: VS Code Jupyter kernel storage
+.vscode-jupyter/
+
+# Optional: Ignore profiling data
+*.prof
