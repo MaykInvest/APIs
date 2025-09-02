@@ -1,3 +1,35 @@
+"""
+This script retrieves and displays the current weather information for a user-specified city
+using the OpenWeatherMap API.
+
+Functionality:
+- Loads the OpenWeatherMap API key from a `.env` file using the environment variable `API_K`.
+- Prompts the user to enter the name of a city.
+- Sends a GET request to the OpenWeatherMap API to fetch weather data for that city.
+- If the request is successful, displays:
+    - Weather description
+    - Temperature in Celsius (with 'feels like' temperature)
+    - Humidity percentage
+    - Wind speed in meters per second
+    - Country code
+
+Requirements:
+- A `.env` file containing your OpenWeatherMap API key in the format:
+    API_K=your_api_key_here
+- The following Python packages installed:
+    - `requests`
+    - `python-dotenv`
+
+Example usage:
+    Enter your city: London
+    Weather in London, GB: Clear sky
+    Temperature: 21ºC (feels like 20ºC)
+    Humidity: 60%
+    Wind speed: 3.6 m/s
+
+Error Handling:
+- If the API request fails (e.g., invalid API key, city not found), an error message and status code are displayed.
+"""
 
 from dotenv import load_dotenv
 import os
